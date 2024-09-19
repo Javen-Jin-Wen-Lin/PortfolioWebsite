@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javen Lin | Portfolio Contact </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div style = "margin-left: 60px; width: calc(100% - 60px);">
+            <div id="aside-container"></div>
+            <div class="container">
+                <div id="header-container"></div>
+                <div class="flex-container" style = "margin-top: 150px;">
+                    <div class="text-container" style = "text-align: center">
+                        <h1>
+                            Contact Me
+                        </h1>
+                        <h3> You can contact me with the places below </h3>
+                        <h3> Linkedin: <span style="color: #007BFF;">www.linkedin.com/in/javen-lin/</span> </h3>
+                        <h3> Gmail: <span style="color: #007BFF;">javen.j.w.lin@gmail.com</span> </h3>
+                        <h3> Phone number: <span style="color: #007BFF;">+1(647)-781-1828</span> </h3>
+                    </div>
+                    <img src="../images/engineer.png" alt="Javen Picture" style="width: 45%; height: auto; align-self: right; margin-right: 50px;">
+                </div>
+            </div>
+            <h1 style = "align-self: right; margin-right: 50px;">f</h1>
+        </div>
+    </main>
+    <script>
+        function loadHTML(elementId, filePath) {
+            fetch(filePath)
+                .then(response => response.text())
+                .then(data => document.getElementById(elementId).innerHTML = data)
+                .catch(error => console.log('Error:', error));
+        }
+
+        // Load the aside and header
+        loadHTML('aside-container', 'aside.html');
+        loadHTML('header-container', 'header.html');
+    </script>
+
+</body>
+</html>

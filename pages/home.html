@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javen Lin | Portfolio Home </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <main>
+        <div class="container">
+            <div id="aside-container"></div>
+            <div class="container" style="flex-direction: column;">
+                
+                <div id="header-container"></div>
+                <div class="containerhome">
+                    <div class="room" id="main-room1">
+                        <div class="flex-container">
+                            <div class="text-container">
+                                <h1 style = "text-align: left; margin-top: 100px;">
+                                    Hello, I'm <span style="color: #007BFF;">Javen Lin</span>
+                                </h1>
+                                <h2 style = "text-align: left;">
+                                    I am a Multidisciplinary Developer and Tech Hobbyist. I am eager to learn and contribute to innovative engineering projects.
+                                </h2>
+                            </div>
+                            <img src="../images/engineer.png" alt="User Logo" style="width: 45%; height: auto; align-self: right; margin-right: 50px;">
+                        </div>
+                    </div>
+                    <div class="room" id="main-room2">
+                        <h1> My expertise includes </h1>
+                        <section class="icon-section">
+                            <div class="icon-box">
+                                <img src="/icons/arduino.png" alt="Arduino" title="Arduino">
+                            </div>
+                            <div class="icon-box">
+                                <img src="/icons/autocad.png" alt="AutoCad" title="AutoCad">
+                            </div>
+                            <div class="icon-box">
+                                <img src="/icons/blender.png" alt="Blender" title="Blender">
+                            </div>
+                            <div class="icon-box">
+                                <img src="/icons/CLanguage.png" alt="C++" title="C++">
+                            </div>
+                            <div class="icon-box">
+                                <img src="/icons/css.png" alt="CSS" title="CSS">
+                            </div>
+                            <div class="icon-box">
+                                <img src="/icons/gazebo.png" alt="Gazebo" title="Gazebo">
+                            </div>
+                            <div class="icon-box">
+                                <img src="/icons/Godot_icon.png" alt="Godot" title="Godot">
+                            </div>
+                            <div class="icon-box">
+                                <img src="/icons/html.png" alt="HTML" title="HTML">
+                            </div>
+                            <div class="icon-box">
+                                <img src="/icons/javascript.png" alt="JavaScript" title="JavaScript">
+                            </div>
+                            <div class="icon-box">
+                                <img src="/icons/Matlab_Logo.png" alt="MATLAB" title="MATLAB">
+                            </div>
+                            <div class="icon-box">
+                                <img src="/icons/nx.png" alt="Siemens NX" title="Siemens NX">
+                            </div>
+                            <div class="icon-box">
+                                <img src="/icons/python.png" alt="Python" title="Python">
+                            </div>
+                            <div class="icon-box">
+                                <img src="/icons/raspberry-pi.png" alt="Raspberry Pi" title="Raspberry Pi">
+                            </div>
+                            <div class="icon-box">
+                                <img src="/icons/rhino.png" alt="Rhino" title="Rhino">
+                            </div>
+                            <div class="icon-box">
+                                <img src="/icons/ROS.png" alt="ROS" title="ROS">
+                            </div>
+                            <div class="icon-box">
+                                <img src="/icons/rviz.png" alt="Rviz" title="Rviz">
+                            </div>
+                            <div class="icon-box">
+                                <img src="/icons/Simulink_Logo.png" alt="Simulink" title="Simulink">
+                            </div>
+                            <div class="icon-box">
+                                <img src="/icons/solidworks.png" alt="Solidworks" title="Solidworks">
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="room" id="main-room3">
+                        <div class="flex-container">
+                            <img src="../images/robot.png" alt="Robot Logo" style="width: 30%; height: auto;">
+                            <div class="text-container">
+                                <h2 style="font-size: 22px; text-align: left;">
+                                    <ul>
+                                        <li><strong>CAD Software Expertise:</strong> Proficient in Solidworks, Rhino, and Siemens NX, applied in both academic projects and work environments for 3D modeling, design, and part optimization.</li>
+                                        
+                                        <li><strong>Programming and Development:</strong> Skilled in C++, MATLAB, Python, Simulink, JavaScript, HTML, and CSS. Developed robotics and web development projects, such as the Depth Camera Robot and Odin Project web applications.</li>
+                                        
+                                        <li><strong>Manufacturing and Fabrication Techniques:</strong> Hands-on experience in welding, soldering, and wiring, gained through robotics and engineering projects, with additional practical applications during internships.</li>
+                                        
+                                        <li><strong>Robotics and Automation:</strong> Extensive experience with the Robotics Operating System (ROS) in a Linux-based environment, applied to simulate and program robots like the Depth Camera and Mobile LIDAR Robots for autonomous navigation and spatial analysis.</li>
+                                        
+                                        <li><strong>Engineering Analysis and Simulation:</strong> Conducted Finite Element Analysis (FEA), Computational Fluid Dynamics (CFD), and motion simulations on projects to validate design concepts and improve system reliability.</li>
+                                        
+                                        <li><strong>Project Management:</strong> Managed and coordinated complex mechanical and robotics projects, ensuring adherence to deadlines and specifications. Demonstrated this in both academic projects and during an internship at Norsk Hydro.</li>
+                                        
+                                        <li><strong>Inventory and Process Optimization:</strong> Implemented physical and virtual storage solutions in a professional environment at Norsk Hydro, streamlining part distribution and improving overall plant efficiency.</li>
+                                    </ul>                              
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        function loadHTML(elementId, filePath) {
+            fetch(filePath)
+                .then(response => response.text())
+                .then(data => document.getElementById(elementId).innerHTML = data)
+                .catch(error => console.log('Error:', error));
+        }
+
+        // Load the aside and header
+        loadHTML('aside-container', 'aside.html');
+        loadHTML('header-container', 'header.html');
+    </script>
+
+</body>
+</html>

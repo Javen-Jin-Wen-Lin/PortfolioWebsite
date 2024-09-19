@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Javen Lin | Portfolio Education </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div id="aside-container"></div>
+
+            <div class="container" style="flex-direction: column;">
+                <div id="header-container"></div>
+
+                <div class="containereducation">
+                    <div class="room" id="main-room4">
+
+                        <div class="flex-container">
+                            <img src="../images/education.png" alt="The Graduate Logo" style="width: 40%; height: auto;">
+                            <div class="text-container">
+                                <h1 style = "margin-top: 100px;">
+                                    Education
+                                </h1>
+                                <h2>
+                                    I am a Mechanical Engineering Graduate. I am self taught with a variety of developer projects.
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="room" id="main-room5">
+                        <img src="../images/odinproject.png" alt="The Odin Project Logo" class="center-image">
+                        <h4>The Odin Project</h4>
+                        <h5>January 2024</h5>
+                        <h5>Web Development Bootcamp - Full Stack JavaScript</h5>
+                    </div>    
+                    <div class="room" id="main-room6">
+                        <img src="../images/ontariotech.png" alt="The OntarioTech Logo" class="center-image">
+                        <h4>Ontario Tech University</h4>
+                        <h5>April 2024</h5>
+                        <h5>Bachelor of Engineering (Honors), Mechanical Engineering</h5>
+                    </div>
+                    <div class="room" id="main-room7">
+                        <img src="../images/roboticsclub.png" alt="The R3iD Logo" class="center-image">
+                        <h4>Robot in 3 Days</h4>
+                        <h5>2023 - 2024</h5>
+                        <h5>Ontario Tech's Robotics Club</h5>
+                    </div>                    
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    <script>
+        function loadHTML(elementId, filePath) {
+            fetch(filePath)
+                .then(response => response.text())
+                .then(data => document.getElementById(elementId).innerHTML = data)
+                .catch(error => console.log('Error:', error));
+        }
+
+        // Load the aside and header
+        loadHTML('aside-container', 'aside.html');
+        loadHTML('header-container', 'header.html');
+    </script>
+
+</body>
+</html>
