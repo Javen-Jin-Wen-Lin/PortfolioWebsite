@@ -17,6 +17,7 @@ body {
     align-items: center;
     gap: 15px;
     width: 100%;
+    margin-top: 10px;
 }
 
 .rectangle-wrap {
@@ -24,7 +25,7 @@ body {
     border-radius: 10px;
     margin: 5px 0;
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .left-image {
@@ -62,6 +63,7 @@ body {
 }
 
 .room {
+    margin-top: 10px;
     font-size: 50%;
     text-align: center;
 }
@@ -213,14 +215,14 @@ h1  {
 h2  {
     margin-left: 15px;
     font-size: 30px;
-    color: grey;
+    color: rgb(127, 210, 255);
     font-weight: normal;
 }
 
 h3  {
     margin-left: 15px;
     font-size: 22px;
-    color: grey;
+    color: rgb(127, 210, 255);
 }
 
 h4  {
@@ -232,7 +234,7 @@ h4  {
 h5  {
     margin: 5px;
     font-size: 16px;
-    color: grey;
+    color: rgb(127, 210, 255);
 }
 
 h6  {
@@ -352,20 +354,27 @@ aside {
     background-color:  #007BFF;
 }
 
-.icon-section {
+.btn-home {
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+    border-radius: 5px;
+    display: block;
+    cursor: pointer;
+    margin: 0;
+    margin-top: 18px;
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.icon-section1 {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding: 20px;
     flex-wrap: wrap;
-  }
-
-.icon-section1 {
-display: flex;
-justify-content: space-around;
-align-items: center;
-padding: 5px;
-flex-wrap: wrap;
+    gap: 20px;
 }
 
 .icon-box {
@@ -380,7 +389,6 @@ object-fit: contain;
 }
 
 .icon-box1 {
-padding: 5px;
 margin: 5px;
 }
 
@@ -464,7 +472,8 @@ object-fit: contain;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin: 10px;
 }
 
 .centered-button:hover {
